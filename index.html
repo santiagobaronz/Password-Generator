@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+<body>
+
+    <div class="box-generator">
+         <h1>Password Generator</h1>
+         <div class="box-input">
+            <input type="text" id="input_password">
+            <button id="copy-password"><img src="css/copy.svg" class="copy-img"></button>
+         </div>
+
+        <h3>Lenght:</h3>
+        <div class="password-lenght">
+            <div class="box-range">
+                <span>4</span>
+                <input type="range" id="range-selector" min="4" max="34" value="15">
+                <span>34</span>
+            </div>
+            <input type="number" id="number-selector" min="4" max="34" value="15">
+        </div>
+
+        <h3>Settings</h3>
+
+        <div class="settings-box">
+            <div class="setting-option">
+                <p>Include Uppercase</p>
+                <div class="switch-button">
+                    <input type="checkbox" id="uppercase">
+                    <label for="uppercase" class="button-label"></label>
+                </div>
+            </div>
+            <div class="setting-option">
+                <p>Include Lowercase</p>
+                <div class="switch-button">
+                    <input type="checkbox" id="lowercase">
+                    <label for="lowercase" class="button-label"></label>
+                </div>
+            </div>
+            <div class="setting-option">
+                <p>Include Numbers</p>
+                <div class="switch-button">
+                    <input type="checkbox" id="numbers">
+                    <label for="numbers" class="button-label"></label>
+                </div>
+            </div>
+            <div class="setting-option">
+                <p>Include Symbols</p>
+                <div class="switch-button">
+                    <input type="checkbox" id="symbols">
+                    <label for="symbols" class="button-label"></label>
+                </div>
+            </div>
+        </div>
+
+        <button id="button_generate">GENERATE PASSWORD</button>
+
+    </div>
+    
+</body>
+</html>
